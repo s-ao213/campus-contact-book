@@ -28,6 +28,16 @@ body {
   margin-bottom: 24px;
 }
 
+.page-header.split,
+.toolbar,
+.contact-card-header,
+.card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
 .page-header p {
   margin: 0 0 8px;
   color: var(--accent);
@@ -45,6 +55,64 @@ body {
   gap: 16px;
 }
 
+.toolbar {
+  margin-bottom: 18px;
+}
+
+.toolbar-search,
+.toolbar-search input,
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  min-height: 42px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+textarea {
+  min-height: 84px;
+  resize: vertical;
+}
+
+button,
+.page-header a {
+  min-height: 40px;
+  padding: 8px 14px;
+  color: #ffffff;
+  background: var(--accent);
+  border: 0;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-form,
+.login-panel {
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.login-panel label {
+  display: grid;
+  gap: 6px;
+}
+
 .contact-card {
   display: grid;
   gap: 16px;
@@ -52,6 +120,10 @@ body {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
+}
+
+.contact-card.favorite {
+  border-color: var(--accent);
 }
 
 .contact-card h2,
