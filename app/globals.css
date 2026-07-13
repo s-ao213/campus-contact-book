@@ -1,0 +1,79 @@
+:root {
+  --background: #f7f8fb;
+  --foreground: #172033;
+  --muted: #667085;
+  --surface: #ffffff;
+  --border: #d9dee8;
+  --accent: #1c7c70;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+
+.page-shell {
+  width: min(1040px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-header p {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.contact-list {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-card {
+  display: grid;
+  gap: 16px;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.contact-card h2,
+.contact-card p {
+  margin: 0;
+}
+
+.contact-card p,
+.contact-card dt {
+  color: var(--muted);
+}
+
+.contact-card dl {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+}
+
+.contact-card dt {
+  font-size: 0.8rem;
+}
+
+.contact-card dd {
+  margin: 2px 0 0;
+}
